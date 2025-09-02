@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería McLaren</title>
+
+  <!-- Bootstrap CSS (librería externa) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (íconos externos) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Estilos internos -->
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(to right, #b30000, #000);
+    }
+    .gallery {
+      padding: 50px 0;
+    }
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #ff4d4d;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 77, 77, 0.6);
+    }
+    footer {
+      background: linear-gradient(to right, #111, #222, #000);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ff4d4d;
+      transform: scale(1.2);
+    }
+  </style>
+
+  <!-- Estilos externos (tu hoja CSS) -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">McLaren Fans</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galería -->
+  <section class="gallery container">
+    <h2>Galería de Autos McLaren</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/2013-03-05_Geneva_Motor_Show_7846.JPG/1200px-2013-03-05_Geneva_Motor_Show_7846.JPG" alt="McLaren P1">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/2018_McLaren_720S_V8_S-A_4.0.jpg" alt="McLaren 720S">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/McLaren_Senna_Genf_2018.jpg/1200px-McLaren_Senna_Genf_2018.jpg" alt="McLaren Senna">
+      </div>
+      <div class="col-md-4">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/mclaren-speedtail-desarrollo-1577177465.jpg" alt="McLaren Speedtail">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2022_McLaren_765LT_Spider_MSO1.jpg/1200px-2022_McLaren_765LT_Spider_MSO1.jpg" alt="McLaren 765LT">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/2021_McLaren_Artura_%281%29.jpg" alt="McLaren Artura">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h5 class="fw-bold">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/mclaren-1-logo-black-and-white.png" alt="McLaren Logo" style="height:130px;">
+    </h5>
+    <p>Pasión por los superdeportivos británicos</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+    </div>
+    <p class="small mt-3">&copy; 2025 McLaren Fans - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS (librería externa) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script propio (librería interna) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
